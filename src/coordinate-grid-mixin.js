@@ -994,6 +994,10 @@ dc.coordinateGridMixin = function (_chart) {
             return true;
         }
 
+        if (!range1 ^ !range2) {
+            return false;
+        }
+
         if (range1.length === 0 && range2.length === 0) {
             return true;
         }
